@@ -1,0 +1,339 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Alpha Globe</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link rel="stylesheet" href="{% static 'css/custom-bs.css' %}">
+    <link rel="stylesheet" href="{% static 'css/jquery.fancybox.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap-select.min.css ' %}">
+    <link rel="stylesheet" href="{% static 'fonts/icomoon/style.css ' %}">
+    <link rel="stylesheet" href="{% static 'fonts/line-icons/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %} ">
+    <link rel="stylesheet" href="{% static 'css/quill.snow.css' %}">
+    
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  </head>
+  <body id="top">
+
+<!--  <div id="overlayer"></div>-->
+<!--  <div class="loader">-->
+<!--    <div class="spinner-border text-primary" role="status">-->
+<!--      <span class="sr-only">Loading...</span>-->
+<!--    </div>-->
+<!--  </div>-->
+    
+
+<div class="site-wrap">
+
+    <div class="site-mobile-menu site-navbar-target">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div> <!-- .site-mobile-menu -->
+    
+
+    <!-- NAVBAR -->
+    <header class="site-navbar mt-3">
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div class="site-logo col-6"><a href="index.html">Alpha Globe</a></div>
+
+         <nav class="mx-auto site-navigation">
+            <ul class="site-menu js-clone-nav d-none d-xl-block ml-0 pl-0">
+              <li><a href="index.html" class="nav-link active">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li class="has-children">
+                <a href="#">Visa Types</a>
+                <ul class="dropdown">
+                  <li><a href="tourism.html">Tourism & Visit</a></li>
+                  <li><a href="Bussines.html">Bussines</a></li>
+                  <li><a href="Employment.html">Employment</a></li>
+                  <li><a href="Study.html">Study</a></li>
+
+                </ul>
+
+              <li><a href="scholars_List.html">Scholarships</a></li>
+              <li><a href="contact.html">Contact</a></li>
+
+              <li class="d-lg-none"><a href="login.html">LogIn</a></li>
+            </ul>
+          </nav>
+
+
+        </div>
+      </div>
+    </header>
+
+    <!-- HOME -->
+    <section class="section-hero overlay inner-page bg-image" style="background-image: url({% static 'images/hero_1.jpg' %});" id="home-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7">
+            <h1 class="text-white font-weight-bold">About Us</h1>
+            <div class="custom-breadcrumbs">
+              <a href="#">Home</a> <span class="mx-2 slash">/</span>
+              <span class="text-white"><strong>About Us</strong></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {% if error %}
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-7 text-center">
+            <h2 class="section-title" style="font-size :20px">{{error}}</h2>
+          </div>
+        </div>
+      </div>
+      {% endif %}
+
+
+
+    
+    <section class="site-section pb-0">
+      <div class="container">
+        <div class="row align-items-center">
+
+          <div class="col-12 ">
+            <h2 class="section-title mb-3">About Us</h2>
+            <p class="lead">Alpha Globe is a Visa portal for Pakistanis who are planning to travel, or already travelling or living abroad.
+Our main purpose is to assist Pakistanis how to travel across the globe securely. We are here to reduce their risks and help them avoid any inconvenience. We will be providing information regarding any visa, keeping it updated automatically. Before we update any visa advisory, we consider information and take guidance from different sources. Here you’ll get general advices before you go, on a wide range of travel topics.</p>
+<!--            <p>Ipsum harum assumenda in eum vel eveniet numquam, cumque vero vitae enim cupiditate deserunt eligendi officia modi consectetur. Expedita tempora quos nobis earum hic ex asperiores quisquam optio nostrum sit!</p>-->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="site-section pt-0">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 mb-5 mb-lg-0 order-md-2">
+            <img src="{% static 'images/about.jpeg' %}" alt="Image" class="img-fluid img-shadow">
+
+<!--              <img src="{% static 'images/sq_img_8.jpg' %}" alt="Image" class="img-fluid img-shadow">-->
+            </a>
+          </div>
+          <div class="col-lg-5 mr-auto order-md-1  mb-5 mb-lg-0">
+            <h2 class="section-title mb-3">Our Mission</h2>
+<!--            <p class="lead">Our goal is to provide our customers each and every knowledge for Visa under one website, all updated and forgery free. We want to facilitate our nation as much as possible. Providing you information about any visa, be it Scholarship, Tourism, Immigration. We are here to serve you by giving you every know-how of your required place, either its safety, health issues or risks, laws or entry requirements. We make sure that our customers get authentic and latest information from our site.</p>-->
+            <p>Our goal is to provide our customers each and every knowledge for Visa under one website, all updated and forgery free. We want to facilitate our nation as much as possible. Providing you information about any visa, be it Scholarship, Tourism, Immigration. We are here to serve you by giving you every know-how of your required place, either its safety, health issues or risks, laws or entry requirements. We make sure that our customers get authentic and latest information from our site.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+   
+    <section class="site-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-12 text-center" data-aos="fade">
+            <h2 class="section-title mb-3">Our Team</h2>
+          </div>
+        </div>
+
+        <div class="row align-items-center block__69944">
+
+          <div class="col-md-4">
+            <img src="{% static 'images/Emman.jpeg' %}" alt="Image" style="width:300px;height:380px; border: solid black 1px" class="img-fluid mb-4 rounded">
+          </div>
+
+          <div class="col-md-8">
+            <h3>Emman Saeed</h3>
+            <p class="text-muted">Creative Director</p>
+            <p>She has a business mindset that allows her to develop new and innovative brainstorming ideas for helping people in a way that is needed the most. She has done Bachelors in Computer Science..</p>
+            <div class="social mt-4">
+              <a href="#"><span class="icon-facebook"></span></a>
+              <a href="#"><span class="icon-twitter"></span></a>
+              <a href="#"><span class="icon-instagram"></span></a>
+              <a href="#"><span class="icon-linkedin"></span></a>
+            </div>
+          </div>
+
+          <div class="col-md-4 order-md-2 ml-md-auto">
+            <img src="{% static 'images/usman.jpg' %}" style="width:300px;height:400px; border: solid black 1px"  alt="Image" class="img-fluid mb-4 rounded">
+          </div>
+
+          <div class="col-md-8">
+            <h3>Muhammad Usman</h3>
+            <p class="text-muted">Creative Director</p>
+            <p>He has a wide knowledge in interface building. A man who’s very much into technologies, has a commitment to design with purpose! By profession, he’s a computer scientist. </p>
+            <div class="social mt-4">
+              <a href="#" target="_blank"><span class="icon-facebook"></span></a>
+              <a href="#"><span class="icon-twitter"></span></a>
+              <a href="#"><span class="icon-instagram"></span></a>
+              <a href="#"><span class="icon-linkedin"></span></a>
+            </div>
+          </div>
+
+          <div class="col-md-4 order-md-2 ml-md-auto">
+            <img src="{% static 'images/Idrees.jpeg' %}" style="width:330px;height:380px; border: solid black 1px" alt="Image" class="img-fluid mb-4 rounded">
+          </div>
+
+          <div class="col-md-8 order-md-2 ml-md-auto">
+            <h3>Idrees Ahmad</h3>
+            <p class="text-muted">Creative Director</p>
+            <p>He’s a full stack Computer Scientist with a degree in Computer Science, having strong leadership qualities and teamwork skills. Always up for improvements and eager to make things happen!</p>
+            <div class="social mt-4">
+              <a href="#"><span class="icon-facebook"></span></a>
+              <a href="#"><span class="icon-twitter"></span></a>
+              <a href="#"><span class="icon-instagram"></span></a>
+              <a href="#"><span class="icon-linkedin"></span></a>
+            </div>
+          </div>
+<!--        <div class="container">-->
+<!--            <img src="images/Emman.jpeg" alt="Avatar" class="image">-->
+<!--            <div class="overlay">-->
+<!--              <div class="text">hello world</div>-->
+<!--            </div>-->
+<!--        </div>-->
+
+
+
+
+
+
+
+        </div>
+        </div>
+    </section>
+
+  <section class="site-section">
+    <div class="container">
+        <div class="row mb-5">
+          <div class="col-12 text-center" data-aos="fade">
+            <h2 class="section-title mb-3">Our Customer Review About Alpha Globe</h2>
+          </div>
+        </div>
+        {% for con in context %}
+        <div class="row ">
+          <div class="col-lg-4">
+              <blockquote>
+                <p style="color:black; font-family:bold">{{con.username|upper}}:</p>
+              </blockquote>
+              <div class="block__91147 d-flex align-items-center">
+                  <h3 style="font-size:20px; color:grey; tab-size:8;">{{con.comment}}</h3>
+              </div>
+          </div>
+
+    </div><br>
+      {% endfor %}
+
+      <br>
+      <br>
+      <form method="post" action="about.html">
+        {% csrf_token %}
+
+    <div class="row mb-5 justify-content-center " >
+
+      <div class="col-12 col-sm-6 col-md-6 col-lg-6 mb-4 mb-lg-0">
+        <input type="text" name="review"  class="form-control form-control-lg" placeholder="Write Something..." required>
+      </div>
+      <div class="col-12 col-sm-4 col-md-4 col-lg-2 mb-4 mb-lg-0">
+        {% if user.is_authenticated %}
+        <button type="submit"  class="btn btn-primary btn-lg btn-block text-white btn-search"><span ></span>Post</button>
+        {% else%}
+        <button type="submit" disabled class="btn btn-primary btn-lg btn-block text-white btn-search"><span></span>Post</button>
+        {% endif %}
+
+      </div>
+    </div>
+        </form>
+    </div>
+  </section>
+
+
+
+
+    <footer class="site-footer">
+
+      <a href="#top" class="smoothscroll scroll-top">
+        <span class="icon-keyboard_arrow_up"></span>
+      </a>
+
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-6 col-md-3 mb-4 mb-md-0">
+            <h3>Search Trending</h3>
+            <ul class="list-unstyled">
+              <li><a href="tourism.html">Tourism visa</a></li>
+              <li><a href="Study.html">Study Visa</a></li>
+              <li><a href="Bussines.html">Business visa</a></li>
+              <li><a href="Employment.html">Employment Visa</a></li>
+              <li><a href="PostScholarship.html">Post Scholarship</a></li>
+
+            </ul>
+          </div>
+          <div class="col-6 col-md-3 mb-4 mb-md-0">
+            <h3>Our Information</h3>
+            <ul class="list-unstyled">
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="about.html">Our Mission</a></li>
+              <li><a href="about.html">Our Team</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-3 mb-4 mb-md-0">
+            <h3>Help Center</h3>
+            <ul class="list-unstyled">
+              <li><a href="#">Support</a></li>
+              <li><a href="#">Privacy</a></li>
+              <li><a href="contact.html">Message Us</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-3 mb-4 mb-md-0">
+            <h3>Contact Us</h3>
+            <div class="footer-social">
+              <a href="https://www.facebook.com/Alpha-Globe-102497648144085/"><span class="icon-facebook"></span></a>
+              <a href="https://mobile.twitter.com/GlobeAlpha"><span class="icon-twitter"></span></a>
+              <a href="https://instagram.com/alpha_globe?igshid=1xh3hawkd2sfr"><span class="icon-instagram"></span></a>
+              <a href="https://twitter.com/GlobeAlpha"><span class="icon-linkedin"></span></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="row text-center">
+          <div class="col-12">
+            <p class="copyright"><small>
+
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This site is made with <i class="icon-heart text-danger" aria-hidden="true"></i> Alpha Globe</a>
+           </small></p>
+          </div>
+        </div>
+
+
+      </div>
+    </footer>
+  
+  </div>
+
+    <!-- SCRIPTS -->
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'js/isotope.pkgd.min.js' %}"></script>
+    <script src="{% static 'js/stickyfill.min.js' %}"></script>
+    <script src="{% static 'js/jquery.fancybox.min.js' %}"></script>
+    <script src="{% static 'js/jquery.easing.1.3.js' %}"></script>
+    
+    <script src="{% static 'js/jquery.waypoints.min.js' %}"></script>
+    <script src="{% static 'js/jquery.animateNumber.min.js' %}"></script>
+    <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'js/quill.min.js' %}"></script>
+    
+    
+    <script src="{% static 'js/bootstrap-select.min.js' %}"></script>
+    
+    <script src="{% static 'js/custom.js' %}"></script>
+   
+   
+  </body>
+</html>
